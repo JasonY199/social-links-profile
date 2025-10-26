@@ -3,7 +3,7 @@ import SocialLink from "@/components/SocialLink";
 
 export default function Home() {
   return (
-    <main className="w-full max-w-[327px]">
+    <main className="w-full max-w-[327px] md:max-w-[384px]">
       <article className="flex flex-col gap-6 items-center rounded-xl bg-grey-800 p-6 text-brand-white">
         <Image
           src="/avatar-jessica.jpeg"
