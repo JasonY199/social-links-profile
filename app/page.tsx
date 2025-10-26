@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SocialLink from "@/components/SocialLink";
 
 export default function Home() {
   return (
@@ -22,13 +23,27 @@ export default function Home() {
         <p className="text-sm leading-normal">
           "Front-end developer and avid reader."
         </p>
-        <ul aria-label="Social Media links" className="text-center">
-          <li>GitHub</li>
-          <li>Frontend Mentor</li>
-          <li>LinkedIn</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
-        </ul>
+        <nav aria-label="Social Media links" className="w-full">
+          <ul className="flex flex-col gap-4">
+            <li>
+              <SocialLink href="https://github.com">GitHub</SocialLink>
+            </li>
+            <li>
+              <SocialLink href="https://frontendmentor.io">
+                Frontend Mentor
+              </SocialLink>
+            </li>
+            <li>
+              <SocialLink href="https://linkedin.com">LinkedIn</SocialLink>
+            </li>
+            <li>
+              <SocialLink href="https://twitter.com">Twitter</SocialLink>
+            </li>
+            <li>
+              <SocialLink href="https://instagram.com">Instagram</SocialLink>
+            </li>
+          </ul>
+        </nav>
       </article>
     </main>
   );
