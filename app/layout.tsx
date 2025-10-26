@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
@@ -21,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${inter.variable} antialiased bg-grey-900 flex items-center justify-center h-full p-6`}
+        className={`${inter.className} antialiased bg-grey-900 flex items-center justify-center h-full p-6`}
       >
         {children}
       </body>
