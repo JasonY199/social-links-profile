@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${inter.variable} antialiased bg-grey-900 flex items-center justify-center h-full`}
+        className={`${inter.variable} antialiased bg-grey-900 flex items-center justify-center h-full p-6`}
       >
         {children}
       </body>
